@@ -10,7 +10,7 @@ const Developer = () => {
        t1.from(dev,1.2,{y:-1280,ease:Power3.easeOut},"+=0.5")
     })
 return(
-    <svg  ref={el=>fullsvg=el} style={{height:'400px',width:'400px'}} id="ade8c9af-7e2e-4eda-b5c8-b06129257226" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="1076.06371" height="755.2279" viewBox="0 0 1076.06371 755.2279"><title>web_developer</title>
+    <svg  ref={el=>fullsvg=el} className="developer-image" id="ade8c9af-7e2e-4eda-b5c8-b06129257226" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="1076.06371" height="755.2279" viewBox="0 0 1076.06371 755.2279"><title>web_developer</title>
 <path d="M926.11393,774.80937c-6.98452,26.59789-31.459,43.21966-31.459,43.21966s-13.15033-26.50193-6.16581-53.09982,31.459-43.21966,31.459-43.21966S933.09845,748.21148,926.11393,774.80937Z" transform="translate(-61.96814 -72.38605)" fill="#3f3d56"/>
 <path d="M915.52,769.18266c-19.56251,19.32716-21.75117,48.83128-21.75117,48.83128s29.52845-1.83141,49.091-21.15858,21.75116-48.83129,21.75116-48.83129S935.08248,749.85549,915.52,769.18266Z" transform="translate(-61.96814 -72.38605)" fill="#6c63ff"/>
 <g id="group1" ref={el=>dev=el} className="dev">

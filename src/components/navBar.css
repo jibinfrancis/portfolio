@@ -35,15 +35,38 @@
 .navbar-menu li:hover{
     color:rgb(21, 165, 2);
 }
-.bar{
-    display: none;
+.navbar-togglebtn{
+    cursor: pointer;
 }
+.navbar-togglebtn .bar {
+    display: none;
+    width: 25px;
+    height: 3px;
+    margin: 5px 10px;
+    transition: all 0.3s ease-in-out;
+    background: #fff;
+  }
+  .navbar-togglebtn.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .navbar-togglebtn.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .navbar-togglebtn.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
 @media screen and (max-width:960px){
-    .bar{
-        display: flex;
+    .navbar-togglebtn .bar{
+        display: block;
     }
+    
     .navContainer{
         padding:0;
+    }
+    .navContainer >h1{
+        margin-left:10px;
     }
     .navbar-menu{
         display: grid;

@@ -6,7 +6,11 @@ const NavBar = () => {
         <div className="navBar">
          <div className="navContainer">
              <h1>Jibin</h1>
-             <button onClick={()=>setToggleMenu(!toggleMenu)} className="bar">open</button>
+             {/* <button onClick={()=>setToggleMenu(!toggleMenu)} className="bar">open</button> */}
+             <div class={toggleMenu?'navbar-togglebtn active':'navbar-togglebtn' } onClick={()=>setToggleMenu(!toggleMenu)}>
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
                  <ul className={toggleMenu?'navbar-menu active':"navbar-menu"}>
                      <li>Services</li>
                      <li>Works</li>
